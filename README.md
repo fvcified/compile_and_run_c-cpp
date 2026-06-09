@@ -71,20 +71,20 @@ gcc --version
 ## 9. Compile and run
 ### C
 ```
-gcc <file_name>.c -o <file_name>
+gcc <file_name>.c -o <executable_file_name>
 ```
 
 ```
-./<file_name>
+./<executable_file_name>
 ```
 
 ### C++
 ```
-g++ <file_name>.cpp -o <file_name>
+g++ <file_name>.cpp -o <executable_file_name>
 ```
 
 ```
-./<file_name>
+./<executable_file_name>
 ```
 ### Note:
 - `gcc` ← **Compiler for C**
