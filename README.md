@@ -78,7 +78,7 @@ g++ <file_name>.cpp -o <executable_file_name>
 - `<file_name>.c` <- **C File Extension**
 - `<file_name>.cpp` <- **C++ File Extension**
 - `-o <file_name>.exe` <- **Compiled Executable File**
-  - `-o` <- **Output (tells the compiler what name to give the output file)**
+  - `-o` <- **Output (Tells the compiler what name to give the output file)**
   - `without -o` <- **create a default name file**
     - `a.exe` <- **(Windows)**
     - `a.out` <- **(MacOS/Linux)**
