@@ -149,8 +149,8 @@ cpp <file_name>.cpp <executable_file_name>
 
 ### Note:
 - `<file_name>.c` / `<file_name>.cpp` <- **Source file to compile**
-- `<executable_file_name>` <- **(Optional) Output file name**
-  - If **not provided**, it automatically uses the source file name (without extension) as the executable name.
+- `<executable_file_name>` <- **Output file name (Optional)**
+  - If **not provided**, it automatically uses the source file name without extension as the executable name.
 - These functions only work in **PowerShell**, not in other shells.
 
 ## Please check related issue
