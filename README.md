@@ -83,6 +83,62 @@ g++ <file_name>.cpp -o <executable_file_name>
     - `a.exe` <- **(Windows)**
     - `a.out` <- **(MacOS/Linux)**
    
+# III. PowerShell Shortcut Functions (Optional)
+### Speed up compiling without typing long commands every time.
+
+## 1️⃣ Open PowerShell Profile
+```powershell
+notepad $PROFILE
+```
+- If the file doesn't exist yet, create it first:
+```powershell
+New-Item -ItemType File -Path $PROFILE -Force
+```
+
+## 2️⃣ Add the Following Functions
+```powershell
+function c {
+    param([string]$file, [string]$out)
+    if (-not $out) { $out = [System.IO.Path]::GetFileNameWithoutExtension($file) }
+    gcc $file -o $out
+}
+
+function cpp {
+    param([string]$file, [string]$out)
+    if (-not $out) { $out = [System.IO.Path]::GetFileNameWithoutExtension($file) }
+    g++ $file -o $out
+}
+```
+- Save the file, then reload the profile:
+```powershell
+. $PROFILE
+```
+
+## 3️⃣ Usage
+### C
+```powershell
+c <file_name>.c
+```
+or specify a custom output name:
+```powershell
+c <file_name>.c <executable_file_name>
+```
+
+### C++
+```powershell
+cpp <file_name>.cpp
+```
+or specify a custom output name:
+```powershell
+cpp <file_name>.cpp <executable_file_name>
+```
+
+### Note:
+- `<file_name>.c` / `<file_name>.cpp` <- **Source file to compile**
+- `<executable_file_name>` <- **(Optional) Output file name**
+  - If **not provided**, it automatically uses the source file name (without extension) as the executable name.
+- These functions only work in **PowerShell**, not in other shells.
+
 ## Please check related issue
 - The compiler path auto-detection issue -> [click here](https://github.com/fvkid/compiler_for_C-CPP/issues/2)
 
