@@ -84,8 +84,6 @@ g++ <file_name>.cpp -o <executable_file_name>
     - `a.out` <- **(MacOS/Linux)**
    
 # III. PowerShell Shortcut Functions (Optional)
-### Speed up compiling without typing long commands every time.
-
 ## 1️⃣ Choose an Installation Method
 
 ### Option A: Auto-Download (Recommended)
