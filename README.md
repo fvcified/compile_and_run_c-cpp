@@ -101,15 +101,15 @@ Then reload the profile:
 ```
 
 ### Option B: Manual Setup
-1. Open your PowerShell profile:
+Open your PowerShell profile:
 ```powershell
 notepad $PROFILE
 ```
-   - If the file doesn't exist yet, create it first:
+If the file doesn't exist yet, create it first:
 ```powershell
 New-Item -ItemType File -Path $PROFILE -Force
 ```
-2. Copy and paste the following functions into the file:
+Copy and paste the following functions into the file:
 ```powershell
 function c {
     param([string]$file, [string]$out)
@@ -123,7 +123,7 @@ function cpp {
     g++ $file -o $out
 }
 ```
-3. Save the file, then reload the profile:
+Save the file, then reload the profile:
 ```powershell
 . $PROFILE
 ```
