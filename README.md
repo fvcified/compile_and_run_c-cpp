@@ -12,48 +12,48 @@
 **Note:** _Always check for the latest update!_
 
 # II. Step by Step
-## 1. The Path
+## 1️⃣ The Path
 - Extract `.zip`, create a `folder`, and copy `the folder path`.
 - Example: `C:\<folder_name>`
   - (_`<folder_name>` - it means the custom folder with name you've created or choose the existing folder_).
 
-## 2. Search on Search Bar or Control Panel
+## 2️⃣ Search on Search Bar or Control Panel
 - **Search Bar**
   - Search "**Edit the system environment variables**" → click "**open**".
 - **Control Panel**
   - Search "**System**" on **Control Panel** and find → click "**Edit the system environment variables**".
 - Add the PATH environment variable.
 
-## 3. **System Properties**
+## 3️⃣ **System Properties**
 - Go to "**Advanced**" and find → click "**Environment Variables"**.
 
-## 4. [→ Environment Variables]
+## 4️⃣ [→ Environment Variables]
 - Look the "**System Variables**" and find → click "**Path**".
 - **3 Options exist**: [New] [**→ Edit**] [Delete]
 
-## 5. [→ Edit environment variable]
+## 5️⃣ [→ Edit environment variable]
 - Click "**New**" and paste the folder path where the extracted files from the ZIP are located.
 - Example: `C:\<folder_name>\<extracted_folder_name>`
 - **Done? All [→ OK]**
 
-## 6. Configuration C/C++ on Visual Studio Code
+## 6️⃣ Configuration C/C++ on Visual Studio Code
 - **Ctrl + Shift + P**
 - Search and find "**C/C++: Edit Configurations (UI)**".
 - **Enter** and **2 Options** exist:
   - **`select a detected compiler path`** from _the drop-down list_.
   - **`fill the compiler path`** with _specify path_.
 
-## 7. Check the GCC (GNU Compiler Collection)
+## 7️⃣ Check the GCC (GNU Compiler Collection)
 ```
 gcc --version
 ```
 
-## 8. Create a File for #C and C++ File Extension
+## 8️⃣ Create a File for #C and C++ File Extension
 - Example:
   - `<file_name>.c` (**C**)
   - `<file_name>.cpp` (**C++**)
 
-## 9. Compile and run
+## 9️⃣ Compile and run
 ### C
 ```
 gcc <file_name>.c -o <executable_file_name>
