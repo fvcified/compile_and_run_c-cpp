@@ -5,8 +5,8 @@
 
 # I. Installation Link
 ### [Compiler MinGW latest version](https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.zip) (Auto-download)
-**More Information at**: <br>
-- [github.com/brechtsanders](https://github.com/brechtsanders) <br>
+**More Information at**:
+- [github.com/brechtsanders](https://github.com/brechtsanders)
 - [winlibs_mingw.git](https://github.com/brechtsanders/winlibs_mingw.git)
   
 **Note:** _Always check for the latest update!_
@@ -19,29 +19,29 @@
 
 ## 2️⃣ Search on Search Bar or Control Panel
 - **Search Bar**
-  - Search "**Edit the system environment variables**" → click "**open**".
+  - Search "**Edit the system environment variables**" -> "**Open**"
 - **Control Panel**
-  - Search "**System**" on **Control Panel** and find → click "**Edit the system environment variables**".
+  - Search "**System**" on **Control Panel** -> "**Edit the system environment variables**"
 - Add the PATH environment variable.
 
 ## 3️⃣ **System Properties**
-- Go to "**Advanced**" and find → click "**Environment Variables"**.
+- Go to "**Advanced**" -> "**Environment Variables"**
 
-## 4️⃣ [→ Environment Variables]
-- Look the "**System Variables**" and find → click "**Path**".
-- **3 Options exist**: [New] [**→ Edit**] [Delete]
+## 4️⃣ [-> Environment Variables]
+- Look the "**System Variables**" -> Choose "**Path**" -> click
+- **3 Options exist**: [New] [**-> Edit**] [Delete]
 
-## 5️⃣ [→ Edit environment variable]
+## 5️⃣ [-> Edit environment variable]
 - Click "**New**" and paste the folder path where the extracted files from the ZIP are located.
 - Example: `C:\<folder_name>\<extracted_folder_name>`
-- **Done? All [→ OK]**
+- **Done? All [-> OK]**
 
 ## 6️⃣ Configuration C/C++ on Visual Studio Code
 - **Ctrl + Shift + P**
-- Search and find "**C/C++: Edit Configurations (UI)**".
+- Search and find "**C/C++: Edit Configurations (UI)**"
 - **Enter** and **2 Options** exist:
-  - **`select a detected compiler path`** from _the drop-down list_.
-  - **`fill the compiler path`** with _specify path_.
+  - **`select a detected compiler path`** from _the drop-down list_
+  - **`fill the compiler path`** with _specify path_
 
 ## 7️⃣ Check the GCC (GNU Compiler Collection)
 ```
@@ -73,20 +73,20 @@ g++ <file_name>.cpp -o <executable_file_name>
 ```
 
 ### Note:
-- `gcc` ← **Compiler for C**
-- `g++` ← **Compiler for C++**
-- `<file_name>.c` ← **C File Extension**
-- `<file_name>.cpp` ← **C++ File Extension**
-- `-o <file_name>.exe` ← **Compiled Executable File**
-  - `-o` ← **Output (tells the compiler what name to give the output file)**
-  - `without -o` ← **create a default name file**
-    - `a.exe` ← **(Windows)**
-    - `a.out` ← **(MacOS/Linux)**
+- `gcc` <- **Compiler for C**
+- `g++` <- **Compiler for C++**
+- `<file_name>.c` <- **C File Extension**
+- `<file_name>.cpp` <- **C++ File Extension**
+- `-o <file_name>.exe` <- **Compiled Executable File**
+  - `-o` <- **Output (tells the compiler what name to give the output file)**
+  - `without -o` <- **create a default name file**
+    - `a.exe` <- **(Windows)**
+    - `a.out` <- **(MacOS/Linux)**
    
 ## Please check related issue
-- [The compiler path auto-detection issue](https://github.com/fvkid/compiler_for_C-CPP/issues/2)
+- The compiler path auto-detection issue -> [click here](https://github.com/fvkid/compiler_for_C-CPP/issues/2)
 
-<br>
+<br />
 
 ## ⚠️ Disclaimer: _School assignment purposes only. All sources included._
 
