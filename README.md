@@ -86,6 +86,7 @@ g++ <file_name>.cpp -o <executable_file_name>
 ```
 ./<executable_file_name>
 ```
+
 ### Note:
 - `gcc` ← **Compiler for C**
 - `g++` ← **Compiler for C++**
