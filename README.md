@@ -1,32 +1,17 @@
 # The Compiler for C and C++
-
----
-
 ### Please check out the latest build:
-> - [WinLibs on Site](https://winlibs.com/)
-> - [The latest WinLibs MinGW release on GitHub](https://github.com/brechtsanders/winlibs_mingw/releases)
-
----
-
-<br>
+- [WinLibs on Site](https://winlibs.com/)
+- [The latest WinLibs MinGW release on GitHub](https://github.com/brechtsanders/winlibs_mingw/releases)
 
 # I. Installation Link
-
 ### [Compiler MinGW latest version](https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.zip) (Auto-download)
 **More Information at**: <br>
-> - [github.com/brechtsanders](https://github.com/brechtsanders) <br>
-> - [winlibs_mingw.git](https://github.com/brechtsanders/winlibs_mingw.git)
+- [github.com/brechtsanders](https://github.com/brechtsanders) <br>
+- [winlibs_mingw.git](https://github.com/brechtsanders/winlibs_mingw.git)
   
 **Note:** _Always check for the latest update!_
 
----
-
-<br>
-
-# II. Step by Step:
-
----
-
+# II. Step by Step
 ## 1. The Path
 - Extract `.zip`, create a `folder`, and copy `the folder path`.
 - Example: `C:\<folder_name>`
