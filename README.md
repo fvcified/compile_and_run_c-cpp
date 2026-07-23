@@ -17,7 +17,7 @@
 - Example: `C:\<folder_name>`
   - (_`<folder_name>` - it means the custom folder with name you've created or choose the existing folder_).
 
-## 2️⃣ Search on Search Bar or Control Panel
+## 2️⃣ Find on Search Bar or Control Panel
 - **Search Bar**
   - Search "**Edit the system environment variables**" -> "**Open**"
 - **Control Panel**
