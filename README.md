@@ -86,16 +86,30 @@ g++ <file_name>.cpp -o <executable_file_name>
 # III. PowerShell Shortcut Functions (Optional)
 ### Speed up compiling without typing long commands every time.
 
-## 1️⃣ Open PowerShell Profile
+## 1️⃣ Choose an Installation Method
+
+### Option A: Auto-Download (Recommended)
+Run this command in PowerShell to download the profile file directly to your PowerShell profile location:
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/fvcified/compile_and_run_c-cpp/main/Microsoft.PowerShell_profile.ps1" -OutFile $PROFILE
+```
+⚠️ **Warning:** This will overwrite your existing PowerShell profile if you already have one. If you want to keep your existing profile content, back it up first, or use **Option B** below instead.
+
+Then reload the profile:
+```powershell
+. $PROFILE
+```
+
+### Option B: Manual Setup
+1. Open your PowerShell profile:
 ```powershell
 notepad $PROFILE
 ```
-- If the file doesn't exist yet, create it first:
+   - If the file doesn't exist yet, create it first:
 ```powershell
 New-Item -ItemType File -Path $PROFILE -Force
 ```
-
-## 2️⃣ Add the Following Functions
+2. Copy and paste the following functions into the file:
 ```powershell
 function c {
     param([string]$file, [string]$out)
@@ -109,12 +123,12 @@ function cpp {
     g++ $file -o $out
 }
 ```
-- Save the file, then reload the profile:
+3. Save the file, then reload the profile:
 ```powershell
 . $PROFILE
 ```
 
-## 3️⃣ Usage
+## 2️⃣ Usage
 ### C
 ```powershell
 c <file_name>.c
@@ -140,7 +154,7 @@ cpp <file_name>.cpp <executable_file_name>
 - These functions only work in **PowerShell**, not in other shells.
 
 ## Please check related issue
-- The compiler path auto-detection issue -> [click here](https://github.com/fvkid/compiler_for_C-CPP/issues/2)
+- The compiler path auto-detection issue -> [click here](https://github.com/fvcified/compile_and_run_c-cpp/issues/2)
 
 <br />
 
