@@ -96,8 +96,6 @@ g++ <file_name>.cpp -o <executable_file_name>
   - `without -o` ← **create a default name file**
     - `a.exe` ← **(Windows)**
     - `a.out` ← **(MacOS/Linux)**
-
-<br>
    
 ## Please check related issue
 - [The compiler path auto-detection issue](https://github.com/fvkid/compiler_for_C-CPP/issues/2)
