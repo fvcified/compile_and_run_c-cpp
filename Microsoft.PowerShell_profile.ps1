@@ -16,12 +16,12 @@ function cr {
     param([string]$file)
     $out = [System.IO.Path]::GetFileNameWithoutExtension($file)
     gcc $file -o $out
-    if ($?) { .\"$out.exe" }
+    if ($?) { & ".\$out.exe" }
 }
 
 function cppr {
     param([string]$file)
     $out = [System.IO.Path]::GetFileNameWithoutExtension($file)
     g++ $file -o $out
-    if ($?) { .\"$out.exe" }
+    if ($?) { & ".\$out.exe" }
 }
