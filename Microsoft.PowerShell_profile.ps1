@@ -1,4 +1,4 @@
-# --- 1. Compile Only ---
+# --- Compile Only ---
 function c {
     param([string]$file, [string]$out)
     if (-not $out) { $out = [System.IO.Path]::GetFileNameWithoutExtension($file) }
@@ -11,7 +11,7 @@ function cpp {
     g++ $file -o $out
 }
 
-# --- 2. Compile & Run ---
+# --- Compile & Run ---
 function cr {
     param([string]$file)
     $out = [System.IO.Path]::GetFileNameWithoutExtension($file)
