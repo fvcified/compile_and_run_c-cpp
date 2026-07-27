@@ -109,6 +109,7 @@ New-Item -ItemType File -Path $PROFILE -Force
 ```
 Copy and paste the following functions into the file:
 ```powershell
+# --- Compile Only ---
 function c {
     param([string]$file, [string]$out)
     if (-not $out) { $out = [System.IO.Path]::GetFileNameWithoutExtension($file) }
@@ -120,6 +121,21 @@ function cpp {
     if (-not $out) { $out = [System.IO.Path]::GetFileNameWithoutExtension($file) }
     g++ $file -o $out
 }
+
+# --- Compile & Run ---
+function cr {
+    param([string]$file)
+    $out = [System.IO.Path]::GetFileNameWithoutExtension($file)
+    gcc $file -o $out
+    if ($?) { .\"$out.exe" }
+}
+
+function cppr {
+    param([string]$file)
+    $out = [System.IO.Path]::GetFileNameWithoutExtension($file)
+    g++ $file -o $out
+    if ($?) { .\"$out.exe" }
+}
 ```
 Save the file, then reload the profile:
 ```powershell
@@ -127,6 +143,7 @@ Save the file, then reload the profile:
 ```
 
 ## 2️⃣ Usage
+### # Compile Only
 ### C
 ```powershell
 c <file_name>.c
@@ -145,11 +162,35 @@ or specify a custom output name:
 cpp <file_name>.cpp <executable_file_name>
 ```
 
+### # Compile and Auto-Run
+### C
+```powershell
+cr <file_name>.c
+```
+
+### C++
+```powershell
+cppr <file_name>.cpp
+```
+
 ### Note:
 - `<file_name>.c` / `<file_name>.cpp` <- **Source file to compile**
 - `<executable_file_name>` <- **Output file name (Optional)**
   - If **not provided**, it automatically uses the source file name without extension as the executable file name.
 - These functions only work in **PowerShell**, not in other shells.
+
+# IV. Troubleshooting
+⚠️ **Issue:** "Script execution is disabled on this system".
+
+If PowerShell throws an error saying that running scripts is disabled when reloading your profile, run this command once to grant permissions for your current user:
+Copy and paste the following functions into the file:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+Then reload your profile again:
+```powershell
+. $PROFILE
+```
 
 ## Please check related issue
 - The compiler path auto-detection issue -> [click here](https://github.com/fvcified/compile_and_run_c-cpp/issues/2)
