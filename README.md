@@ -183,7 +183,6 @@ cppr <file_name>.cpp
 ⚠️ **Issue:** "Script execution is disabled on this system".
 
 If PowerShell throws an error saying that running scripts is disabled when reloading your profile, run this command once to grant permissions for your current user:
-Copy and paste the following functions into the file:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
