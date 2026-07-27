@@ -192,7 +192,7 @@ Then reload your profile again:
 . $PROFILE
 ```
 
-## Please check related issue
+# Please check related issue
 - The compiler path auto-detection issue -> [click here](https://github.com/fvcified/compile_and_run_c-cpp/issues/2)
 
 <br />
