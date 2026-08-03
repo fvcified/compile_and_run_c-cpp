@@ -15,7 +15,7 @@
 ## 1️⃣ The Path
 - Extract `.zip`, create a `folder`, and copy `the folder path`.
 - Example: `C:\<folder_name>`
-  - (_`<folder_name>` - it means the custom folder with name you've created or choose the existing folder_).
+  - (_`<folder_name>` -> it means the custom folder with name you've created or choose the existing folder_).
 
 ## 2️⃣ Find on Search Bar or Control Panel
 - **Search Bar**
